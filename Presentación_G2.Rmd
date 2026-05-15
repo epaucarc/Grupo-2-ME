@@ -6,35 +6,49 @@ output:
   ioslides_presentation:
     widescreen: true
     smaller: false
+css: estilos.css
 ---
 
-# Dashboard Gapminder: Desarrollo Mundial Interactivo
+<br>
 
 ## Producto Académico Colaborativo
 
-### Integrantes
+### Análisis interactivo del desarrollo mundial  
+### utilizando R, Shiny y Gapminder
+
+<br>
+
+
+**Integrantes**
 
 - Jose Manuel Armaza Nalvarte
 - Ruth Sandra Jara Oré
 - Emerson Dennis Paucar Cuipal
 - Randal Manuel Unsueta Quispe
 - Oscar Gary Yaringaño Pizarro
+<br>
 
----
+Universidad Continental · 2026
+
+
 
 # ¿Qué desarrolla el proyecto?
 
-El proyecto implementa un dashboard interactivo en R utilizando Shiny y la base de datos Gapminder.
+<div class="slide-card">
 
-Permite analizar:
+## Dashboard interactivo en R y Shiny
 
-- Esperanza de vida
-- PIB per cápita
-- Población
-- Brechas entre países y continentes
-- Índice de desarrollo relativo
+El proyecto implementa una plataforma visual para analizar indicadores globales de desarrollo utilizando la base de datos Gapminder.
 
----
+</div>
+
+| Funcionalidad | Aplicación |
+|---|---|
+| 🌍 Desarrollo mundial | Comparación entre países y continentes |
+| 📈 Evolución temporal | Análisis histórico entre 1952 y 2007 |
+| 💰 PIB per cápita | Relación entre economía y calidad de vida |
+| ⚠️ Brechas | Identificación de desigualdades |
+| 🧠 Insights automáticos | Apoyo para la toma de decisiones |
 
 # Objetivo del Dashboard
 
