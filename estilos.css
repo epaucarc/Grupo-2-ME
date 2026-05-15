@@ -6,6 +6,19 @@ body {
 h1, h2, h3 {
   color: #0B3C5D;
   font-weight: bold;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 42px !important;
+}
+
+h2 {
+  font-size: 34px !important;
+}
+
+h3 {
+  font-size: 28px !important;
 }
 
 slides > slide {
@@ -60,6 +73,10 @@ strong {
   text-align: center;
 }
 
+slides > slide:not(.title-slide) {
+  background: white !important;
+}
+
 .slide-card {
   background-color: #eef5fb;
   border-left: 8px solid #1D70A2;
@@ -83,4 +100,37 @@ strong {
   font-size: 22px;
   line-height: 1.35;
   text-align: center;
+}
+
+.objetivo-principal {
+  background-color: #eef5fb;
+  border-left: 8px solid #1D70A2;
+  padding: 24px;
+  border-radius: 14px;
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 28px;
+  color: #0B3C5D;
+}
+
+.flujo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.flujo-box {
+  background-color: white;
+  border-radius: 16px;
+  padding: 22px;
+  width: 180px;
+  min-height: 140px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.12);
+  color: #0B3C5D;
 }

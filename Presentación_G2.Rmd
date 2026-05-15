@@ -9,15 +9,12 @@ output:
 css: estilos.css
 ---
 
-<br>
 
 ## Producto Académico Colaborativo
 
-### Análisis interactivo del desarrollo mundial  
-### utilizando R, Shiny y Gapminder
+### Análisis interactivo del desarrollo mundial con R, Shiny y Gapminder
 
 <br>
-
 
 **Integrantes**
 
@@ -26,17 +23,18 @@ css: estilos.css
 - Emerson Dennis Paucar Cuipal
 - Randal Manuel Unsueta Quispe
 - Oscar Gary Yaringaño Pizarro
+
 <br>
 
 Universidad Continental · 2026
 
 
 
-# ¿Qué desarrolla el proyecto?
+## ¿Qué desarrolla el proyecto?
 
 <div class="slide-card">
 
-## Dashboard interactivo en R y Shiny
+<strong>Dashboard interactivo en R y Shiny</strong><br>
 
 El proyecto implementa una plataforma visual para analizar indicadores globales de desarrollo utilizando la base de datos Gapminder.
 
@@ -50,37 +48,48 @@ El proyecto implementa una plataforma visual para analizar indicadores globales 
 | ⚠️ Brechas | Identificación de desigualdades |
 | 🧠 Insights automáticos | Apoyo para la toma de decisiones |
 
-# Objetivo del Dashboard
 
-Diseñar una herramienta interactiva para explorar y comparar indicadores globales de desarrollo.
 
-El dashboard busca facilitar:
+## Objetivo del Dashboard
 
-- La lectura visual de datos.
-- La comparación entre países.
-- La identificación de brechas.
-- La generación de insights para la toma de decisiones.
+<div class="objetivo-principal">
 
----
+Diseñar una herramienta interactiva para explorar y comparar indicadores globales de desarrollo mediante visualizaciones dinámicas en R y Shiny.
 
-# Herramientas Utilizadas
+</div>
+
+| Propósito | Valor para el análisis |
+|---|---|
+| 📊 Lectura visual de datos | Facilita interpretar indicadores complejos |
+| 🌍 Comparación entre países | Permite observar diferencias territoriales |
+| ⚠️ Identificación de brechas | Ayuda a reconocer desigualdades relevantes |
+| 🧠 Generación de insights | Apoya decisiones basadas en evidencia |
+
+
+
+## Herramientas Utilizadas
 
 | Herramienta | Uso principal |
 |---|---|
 | R | Análisis de datos |
 | RStudio | Desarrollo del proyecto |
 | Shiny | Aplicación interactiva |
-| ggplot2 | Visualizaciones |
-| plotly | Interactividad |
+| ggplot2 | Visualizaciones estadísticas |
+| plotly | Interactividad gráfica |
 | dplyr | Manipulación de datos |
+| DT | Tabla interactiva |
 | GitHub | Control de versiones |
 | shinyapps.io | Publicación web |
 
----
+## Base de Datos Gapminder
 
-# Base de Datos Gapminder
+<div class="slide-card">
 
-La base contiene información mundial entre 1952 y 2007.
+<strong> Información histórica mundial</strong>
+
+La base Gapminder contiene datos de países entre 1952 y 2007, permitiendo analizar la evolución de indicadores de desarrollo.
+
+</div>
 
 | Variable | Descripción |
 |---|---|
@@ -91,32 +100,90 @@ La base contiene información mundial entre 1952 y 2007.
 | pop | Población |
 | gdpPercap | PIB per cápita |
 
----
 
-# Funcionalidades del Dashboard
 
-## Principales capacidades implementadas
+## Funcionalidades del Dashboard
 
-- Filtros dinámicos por continente, país y año.
-- Mapa mundial interactivo.
-- Evolución temporal.
-- Ranking de países.
-- Brechas de desarrollo.
-- Índice de desarrollo relativo.
-- Insights automáticos.
-- Tabla interactiva.
+| Módulo | Función |
+|---|---|
+| 🌍 Mapa Mundial | Visualiza la esperanza de vida por país |
+| 📈 Evolución | Analiza cambios históricos |
+| 💰 PIB vs Vida | Relaciona economía y esperanza de vida |
+| 🏆 Ranking | Identifica países con mayor y menor esperanza de vida |
+| ⚠️ Brechas | Muestra desigualdades entre países o continentes |
+| 🧠 Índice Desarrollo | Clasifica países según indicador relativo |
+| 💡 Insights | Genera lecturas automáticas |
+| 📋 Tabla | Explora datos detallados |
 
----
 
-# Arquitectura del Dashboard
+## Arquitectura del Dashboard
 
-```text
-Base Gapminder
-      ↓
-Procesamiento en R
-      ↓
-Filtros dinámicos
-      ↓
-Visualizaciones interactivas
-      ↓
-Insights para la toma de decisiones
+<br>
+
+<div class="flujo">
+
+<div class="flujo-box">
+🌍<br>
+<strong>Base Gapminder</strong><br>
+Datos históricos mundiales
+</div>
+
+➡️
+
+<div class="flujo-box">
+💻<br>
+<strong>Procesamiento en R</strong><br>
+Transformación y análisis
+</div>
+
+➡️
+
+<div class="flujo-box">
+🎛️<br>
+<strong>Filtros dinámicos</strong><br>
+Continente · País · Año
+</div>
+
+➡️
+
+<div class="flujo-box">
+📊<br>
+<strong>Visualizaciones</strong><br>
+Mapas · Rankings · Brechas
+</div>
+
+➡️
+
+<div class="flujo-box">
+🧠<br>
+<strong>Insights</strong><br>
+Toma de decisiones
+</div>
+
+</div>
+
+
+
+## Enlaces del Proyecto
+
+<div class="slide-card">
+
+<strong>🌐 Repositorio GitHub</strong>
+
+https://github.com/epaucarc/Grupo-2-ME
+
+</div>
+
+
+<div class="slide-card">
+
+<strong>🚀 Dashboard publicado</strong>
+
+https://emerson-cuipal.shinyapps.io/grupo-2-me/
+
+</div>
+
+| Recurso | Utilidad |
+|---|---|
+| GitHub | Acceso al código fuente y trabajo colaborativo |
+| shinyapps.io | Acceso al dashboard interactivo publicado |
