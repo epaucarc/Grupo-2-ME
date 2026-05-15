@@ -1,0 +1,108 @@
+---
+title: "Dashboard Gapminder: Desarrollo Mundial Interactivo"
+author: "Grupo 2 ME"
+date: "2026"
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: false
+---
+
+# Dashboard Gapminder: Desarrollo Mundial Interactivo
+
+## Producto Académico Colaborativo
+
+### Integrantes
+
+- Jose Manuel Armaza Nalvarte
+- Ruth Sandra Jara Oré
+- Emerson Dennis Paucar Cuipal
+- Randal Manuel Unsueta Quispe
+- Oscar Gary Yaringaño Pizarro
+
+---
+
+# ¿Qué desarrolla el proyecto?
+
+El proyecto implementa un dashboard interactivo en R utilizando Shiny y la base de datos Gapminder.
+
+Permite analizar:
+
+- Esperanza de vida
+- PIB per cápita
+- Población
+- Brechas entre países y continentes
+- Índice de desarrollo relativo
+
+---
+
+# Objetivo del Dashboard
+
+Diseñar una herramienta interactiva para explorar y comparar indicadores globales de desarrollo.
+
+El dashboard busca facilitar:
+
+- La lectura visual de datos.
+- La comparación entre países.
+- La identificación de brechas.
+- La generación de insights para la toma de decisiones.
+
+---
+
+# Herramientas Utilizadas
+
+| Herramienta | Uso principal |
+|---|---|
+| R | Análisis de datos |
+| RStudio | Desarrollo del proyecto |
+| Shiny | Aplicación interactiva |
+| ggplot2 | Visualizaciones |
+| plotly | Interactividad |
+| dplyr | Manipulación de datos |
+| GitHub | Control de versiones |
+| shinyapps.io | Publicación web |
+
+---
+
+# Base de Datos Gapminder
+
+La base contiene información mundial entre 1952 y 2007.
+
+| Variable | Descripción |
+|---|---|
+| country | País |
+| continent | Continente |
+| year | Año |
+| lifeExp | Esperanza de vida |
+| pop | Población |
+| gdpPercap | PIB per cápita |
+
+---
+
+# Funcionalidades del Dashboard
+
+## Principales capacidades implementadas
+
+- Filtros dinámicos por continente, país y año.
+- Mapa mundial interactivo.
+- Evolución temporal.
+- Ranking de países.
+- Brechas de desarrollo.
+- Índice de desarrollo relativo.
+- Insights automáticos.
+- Tabla interactiva.
+
+---
+
+# Arquitectura del Dashboard
+
+```text
+Base Gapminder
+      ↓
+Procesamiento en R
+      ↓
+Filtros dinámicos
+      ↓
+Visualizaciones interactivas
+      ↓
+Insights para la toma de decisiones
