@@ -23,7 +23,7 @@ css: estilos.css
 - Emerson Dennis Paucar Cuipal
 - Randal Manuel Unsueta Quispe
 - Oscar Gary Yaringaño Pizarro
-
+- Luis Felipe Veintemilla Villacorta
 <br>
 
 Universidad Continental · 2026
