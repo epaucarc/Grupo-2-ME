@@ -72,7 +72,7 @@ Gapminder proporciona información histórica sobre indicadores de desarrollo hu
 
 ## Banco Mundial
 
-Se incorporan datos complementarios del Banco Mundial para actualizar y ampliar el análisis del desarrollo mundial, permitiendo superar la limitación temporal de Gapminder, cuya base histórica llega hasta 2007.
+Se incorporan datos complementarios del Banco Mundial para actualizar y ampliar el análisis del desarrollo mundial, permitiendo superar la limitación temporal de Gapminder, cuya base histórica llega hasta 2023.
 
 ---
 
