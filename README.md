@@ -1,331 +1,399 @@
-# 🌍 Dashboard Gapminder: Desarrollo Mundial Interactivo
+# 🌍 Dashboard Interactivo de Desarrollo Mundial- Banco Mundial - Gapminder
+## Producto Académico Colaborativo – Grupo 2 ME
 
-## Producto Académico Colaborativo
+Este proyecto desarrolla un **dashboard interactivo en R Shiny** para analizar indicadores de desarrollo mundial a partir de datos de **Gapminder** y datos complementarios del **Banco Mundial**.
 
-Este proyecto desarrolla un dashboard interactivo utilizando **R**, **Shiny** y la base de datos **Gapminder**, con el objetivo de explorar indicadores globales de desarrollo humano mediante visualizaciones dinámicas e interactivas.
-
-El dashboard permite analizar información relacionada con:
-
-* Esperanza de vida
-* PIB per cápita
-* Población
-* Brechas entre países y continentes
-* Índice de Desarrollo Relativo
-* Evolución temporal del desarrollo mundial
+El dashboard permite explorar la evolución de indicadores como esperanza de vida, PIB per cápita, población, brechas entre países y continentes, así como un Índice de Desarrollo Relativo construido para facilitar la comparación territorial.
 
 ---
 
-# 👥 Integrantes
+## 👥 Integrantes
 
-* Jose Manuel Armaza Nalvarte
-* Ruth Sandra Jara Oré
-* Emerson Dennis Paucar Cuipal
-* Randal Manuel Unsueta Quispe
-* Oscar Gary Yaringaño Pizarro
-
----
-
-# 🎯 Objetivo del Proyecto
-
-Diseñar un dashboard interactivo orientado al análisis del desarrollo mundial utilizando la base de datos Gapminder, permitiendo comparar países, continentes y tendencias históricas mediante visualizaciones dinámicas que faciliten la interpretación de datos y la toma de decisiones.
+- Jose Manuel Armaza Nalvarte
+- Ruth Sandra Jara Oré
+- Emerson Dennis Paucar Cuipal
+- Randal Manuel Unsueta Quispe
+- Oscar Gary Yaringaño Pizarro
+- Luis Felipe Veintemilla Villacorta
 
 ---
 
-# 🔗 Enlaces del Proyecto
+## 🎯 Objetivo del proyecto
 
-## Repositorio GitHub
-
-[https://github.com/epaucarc/Grupo-2-ME](https://github.com/epaucarc/Grupo-2-ME)
-
-## Dashboard publicado en shinyapps.io
-
-[https://emerson-cuipal.shinyapps.io/grupo-2-me/](https://emerson-cuipal.shinyapps.io/grupo-2-me/)
+Diseñar un dashboard interactivo que permita analizar, comparar y visualizar indicadores de desarrollo mundial mediante herramientas de ciencia de datos, facilitando la interpretación de tendencias históricas, brechas territoriales y patrones de desarrollo entre países y continentes.
 
 ---
 
-# 🛠️ Herramientas Utilizadas
+## 🔗 Enlaces del proyecto
 
-| Herramienta  | Descripción                                        |
-| ------------ | -------------------------------------------------- |
-| R            | Lenguaje de programación para análisis estadístico |
-| RStudio      | Entorno de desarrollo integrado                    |
-| Shiny        | Framework para dashboards interactivos             |
-| ggplot2      | Visualización estadística                          |
-| plotly       | Interactividad gráfica                             |
-| dplyr        | Manipulación y transformación de datos             |
-| DT           | Tablas dinámicas                                   |
-| GitHub       | Control de versiones y trabajo colaborativo        |
-| shinyapps.io | Publicación del dashboard                          |
+### 📁 Repositorio GitHub  
+https://github.com/epaucarc/Grupo-2-ME
+
+### 🌐 Dashboard publicado en shinyapps.io  
+https://emerson-cuipal.shinyapps.io/grupo-2-me/
 
 ---
 
-# 🌐 Base de Datos Utilizada
+# 🛠️ Herramientas utilizadas
 
-## Dataset Gapminder
-
-La base de datos Gapminder contiene información histórica sobre indicadores de desarrollo mundial entre 1952 y 2007.
-
-## Variables principales
-
-| Variable  | Descripción       |
-| --------- | ----------------- |
-| country   | País              |
-| continent | Continente        |
-| year      | Año               |
-| lifeExp   | Esperanza de vida |
-| pop       | Población         |
-| gdpPercap | PIB per cápita    |
-
----
-
-# ⚙️ Funcionalidades del Dashboard
-
-El dashboard implementa diversas funcionalidades orientadas al análisis interactivo:
-
-✅ Filtros dinámicos por continente, país y año.
-
-✅ KPIs automáticos.
-
-✅ Mapa mundial interactivo.
-
-✅ Evolución temporal de indicadores.
-
-✅ Comparación entre países y continentes.
-
-✅ Ranking de países.
-
-✅ Brechas de desarrollo.
-
-✅ Índice de Desarrollo Relativo.
-
-✅ Insights automáticos.
-
-✅ Tabla interactiva.
+| Herramienta | Descripción |
+|---|---|
+| R | Lenguaje de programación para análisis estadístico |
+| RStudio | Entorno de desarrollo |
+| Shiny | Framework para construir aplicaciones web interactivas |
+| ggplot2 | Visualización estadística |
+| plotly | Gráficos interactivos |
+| dplyr | Limpieza y transformación de datos |
+| leaflet | Mapas interactivos |
+| DT | Tablas dinámicas |
+| countrycode | Homologación de países y códigos ISO |
+| WDI | Consulta de indicadores del Banco Mundial |
+| GitHub | Control de versiones |
+| shinyapps.io | Publicación del dashboard |
 
 ---
 
-# 🧭 Arquitectura del Dashboard
+# 🌐 Fuentes de datos
+
+## Gapminder
+
+Gapminder proporciona información histórica sobre indicadores de desarrollo humano y económico de distintos países.
+
+| Variable | Descripción |
+|---|---|
+| country | País |
+| continent | Continente |
+| year | Año |
+| lifeExp | Esperanza de vida |
+| pop | Población |
+| gdpPercap | PIB per cápita |
+
+---
+
+## Banco Mundial
+
+Se incorporan datos complementarios del Banco Mundial para actualizar y ampliar el análisis del desarrollo mundial, permitiendo superar la limitación temporal de Gapminder, cuya base histórica llega hasta 2007.
+
+---
+
+# 🌐 Gapminder y Banco Mundial: relación y diferencias
+
+El dashboard integra información proveniente de **Gapminder** y del **Banco Mundial**, dos fuentes ampliamente utilizadas para el análisis de indicadores de desarrollo global.
+
+## 🔹 ¿Qué tienen en común?
+
+Ambas bases de datos trabajan con indicadores relacionados con:
+
+- Desarrollo humano
+- Economía
+- Salud
+- Población
+- Calidad de vida
+- Comparación entre países
+
+Además, gran parte de la información utilizada por Gapminder proviene originalmente de organismos internacionales como el propio Banco Mundial, Naciones Unidas y la OMS.
+
+---
+
+## 🔹 Principales diferencias
+
+| Aspecto | Gapminder | Banco Mundial |
+|---|---|---|
+| Enfoque | Visualización y divulgación educativa | Información estadística oficial |
+| Cobertura temporal | Principalmente 1952–2007 | Información continuamente actualizada |
+| Complejidad | Datos simplificados y listos para análisis | Gran volumen de indicadores especializados |
+| Facilidad de uso | Alta | Media |
+| Objetivo principal | Comprensión visual del desarrollo mundial | Monitoreo y análisis estadístico global |
+
+---
+
+## 🔹 ¿Por qué es importante integrar ambas fuentes?
+
+La integración de ambas bases fortalece el análisis del dashboard debido a que:
+
+✅ Gapminder facilita la exploración visual e histórica del desarrollo mundial.
+
+✅ Banco Mundial permite actualizar indicadores y ampliar el análisis territorial y temporal.
+
+✅ La combinación mejora la comparación entre países y continentes.
+
+✅ Se fortalece el análisis basado en evidencia mediante datos internacionales reconocidos.
+
+✅ Permite comprender tanto tendencias históricas como comportamientos recientes del desarrollo global.
+
+---
+
+## 🔹 Valor agregado para el proyecto
+
+La combinación de Gapminder y Banco Mundial permite construir un dashboard más completo, dinámico y actualizado, integrando visualización interactiva con análisis estadístico internacional.
+
+Esto mejora la interpretación de información y fortalece la toma de decisiones basada en datos.
+
+---
+
+# 🧭 Flujo metodológico del dashboard
 
 ```text
-Base de datos Gapminder
-            ↓
-Procesamiento y transformación en R
-            ↓
-Filtros dinámicos
-            ↓
-Visualizaciones interactivas
-            ↓
-Generación de insights
-            ↓
-Análisis y toma de decisiones
+1. Carga de datos
+   Gapminder + Banco Mundial
+          ↓
+2. Limpieza y homologación
+   Países, continentes, subregiones y códigos ISO
+          ↓
+3. Transformación de variables
+   Indicadores, rankings, brechas e índice relativo
+          ↓
+4. Filtros dinámicos
+   Continente, subregión, país y año
+          ↓
+5. Visualizaciones interactivas
+   Mapas, gráficos, KPIs, rankings y tablas
+          ↓
+6. Insights automáticos
+   Principales hallazgos para el análisis
+          ↓
+7. Interpretación y toma de decisiones
+   Comparación territorial y análisis basado en evidencia
 ```
 
 ---
 
-# 📊 Dashboard Principal
+# ⚙️ Funcionalidades del dashboard
 
-## Panorama Mundial del Desarrollo
+El dashboard incorpora las siguientes funcionalidades:
 
-El dashboard principal presenta la relación entre:
-
-* PIB per cápita
-* Esperanza de vida
-* Población
-* Continente
-
-Esta visualización permite identificar patrones globales de desarrollo y diferencias estructurales entre regiones.
-
-![Mapa Mundial](Imagenes/Mapa.png)
-
----
-
-# 🌎 Mapa Mundial Interactivo
-
-El mapa mundial permite visualizar territorialmente la esperanza de vida de cada país según el año seleccionado.
-
-## Principales insights
-
-* Europa y Oceanía presentan mayores niveles de esperanza de vida.
-* África presenta menores indicadores relativos.
-* América y Asia muestran comportamientos intermedios y heterogéneos.
-
-El mapa facilita la identificación espacial de brechas de desarrollo.
-
-![Mapa Mundial](Imagenes/Mapa.png)
+- Filtros dinámicos por continente, subregión, país y año.
+- KPIs automáticos.
+- Mapa mundial interactivo.
+- Evolución temporal de indicadores.
+- Comparación entre países y continentes.
+- Ranking de países.
+- Análisis de brechas de desarrollo.
+- Índice de Desarrollo Relativo.
+- Insights automáticos.
+- Tabla interactiva para consulta de datos.
 
 ---
 
-# 📈 Evolución Temporal
+# 📊 Principales módulos del dashboard
 
-El dashboard permite analizar la evolución histórica de la esperanza de vida.
+## 1. Panorama mundial del desarrollo
 
-Dependiendo de los filtros seleccionados, el sistema muestra:
+Presenta una visión general del desarrollo mundial mediante indicadores como:
 
-* Evolución promedio por continente.
-* Evolución de países de un continente.
-* Comparación entre país seleccionado, promedio continental y promedio mundial.
+- Esperanza de vida
+- PIB per cápita
+- Población
+- Continente
+- Año de análisis
 
-## Insight principal
-
-La evolución temporal permite identificar tendencias, rezagos y mejoras relativas entre países y regiones.
-
----
-
-# 💰 Relación PIB vs Esperanza de Vida
-
-La visualización compara el comportamiento económico y social de los países.
-
-## Principales hallazgos
-
-* Existe una relación positiva entre PIB per cápita y esperanza de vida.
-* Los países con mayores ingresos presentan, en promedio, mejores condiciones de vida.
-* Se observan diferencias importantes entre regiones.
+Permite identificar patrones globales y diferencias estructurales entre regiones.
 
 ---
 
-# 🏆 Ranking de Países
+## 2. Mapa mundial interactivo
 
-El dashboard incorpora rankings dinámicos que permiten identificar:
+El mapa permite visualizar territorialmente los indicadores de desarrollo por país.
 
-* Países con mayor esperanza de vida.
-* Países con menor esperanza de vida.
-
-## Utilidad analítica
-
-Facilita reconocer líderes y rezagos en indicadores de desarrollo humano.
+Esta visualización facilita la identificación espacial de brechas de desarrollo, diferencias regionales y comportamientos heterogéneos entre continentes.
 
 ---
 
-# ⚠️ Brechas de Desarrollo
+## 3. Evolución temporal
 
-La sección de brechas permite analizar desigualdades:
+Permite analizar la evolución histórica de los indicadores seleccionados.
 
-* Entre continentes.
-* Entre países de un continente.
+Según los filtros aplicados, el dashboard puede mostrar:
 
-## Insight principal
-
-Una mayor diferencia en esperanza de vida refleja mayores desigualdades estructurales.
-
-Esta visualización ayuda a identificar territorios con mayor disparidad interna.
+- Evolución promedio mundial.
+- Evolución por continente.
+- Evolución de un país específico.
+- Comparación entre país, continente y promedio mundial.
 
 ---
 
-# 🧠 Índice de Desarrollo Relativo
+## 4. Relación entre PIB y esperanza de vida
 
-Se construyó un indicador propio considerando:
+Esta visualización permite analizar la relación entre desarrollo económico y bienestar social.
 
-* 60% esperanza de vida normalizada.
-* 40% PIB per cápita normalizado.
+En términos generales, los países con mayor PIB per cápita tienden a presentar mayores niveles de esperanza de vida; sin embargo, también se observan diferencias importantes entre regiones.
 
-El índice clasifica países según niveles relativos de desarrollo.
+---
 
-## Clasificación
+## 5. Ranking de países
 
-| Nivel    | Interpretación           |
-| -------- | ------------------------ |
+El dashboard genera rankings dinámicos para identificar países con mejores y menores desempeños según los indicadores seleccionados.
+
+Esto permite reconocer líderes, rezagos y contrastes territoriales.
+
+---
+
+## 6. Brechas de desarrollo
+
+La sección de brechas permite analizar desigualdades entre países y continentes.
+
+Una mayor diferencia entre valores máximos y mínimos refleja mayores disparidades estructurales en los indicadores de desarrollo.
+
+---
+
+## 7. Índice de Desarrollo Relativo
+
+Se construyó un indicador compuesto para comparar el nivel relativo de desarrollo entre países.
+
+El índice considera:
+
+- 60% esperanza de vida normalizada.
+- 40% PIB per cápita normalizado.
+
+| Nivel | Interpretación |
+|---|---|
 | Muy alto | Alto desarrollo relativo |
-| Alto     | Desarrollo favorable     |
-| Medio    | Desarrollo intermedio    |
-| Bajo     | Rezago relativo          |
-
-![Índice de Desarrollo](Imagenes/Índice de desarrollo.png)
+| Alto | Desarrollo favorable |
+| Medio | Desarrollo intermedio |
+| Bajo | Rezago relativo |
 
 ---
 
-# 📋 Tabla Interactiva
+## 8. Insights automáticos
 
-El dashboard incorpora una tabla dinámica que permite:
+El dashboard genera mensajes automáticos que resumen hallazgos relevantes, tales como:
 
-* Buscar países.
-* Ordenar variables.
-* Comparar indicadores.
-* Explorar información histórica.
+- País con mayor esperanza de vida.
+- País con menor esperanza de vida.
+- País con mayor PIB per cápita.
+- Países por debajo del promedio mundial.
+- País con mayor índice de desarrollo relativo.
 
-## Variables mostradas
-
-* País
-* Continente
-* Esperanza de vida
-* PIB per cápita
-* Población
-* Índice de desarrollo relativo
-
-![Tabla Resumen](Imagenes/Tabla_resumen.png)
+Estos insights permiten que el usuario interprete rápidamente los resultados sin depender únicamente de la lectura manual de gráficos y tablas.
 
 ---
 
-# 💡 Insights Automáticos
+# ✅ Ventajas del dashboard
 
-El dashboard genera insights automáticos relacionados con:
-
-* País con mayor esperanza de vida.
-* País con menor esperanza de vida.
-* País con mayor PIB per cápita.
-* Países por debajo del promedio mundial.
-* País con mayor índice de desarrollo relativo.
-
-## Valor agregado
-
-La incorporación de insights fortalece la interpretación analítica y facilita la toma de decisiones.
-
----
-
-# ✅ Ventajas del Dashboard
-
-* Interactividad dinámica.
-* Comparación territorial.
-* Visualizaciones intuitivas.
-* Análisis temporal.
-* Integración de múltiples indicadores.
-* Fácil interpretación visual.
-* Accesibilidad web mediante shinyapps.io.
+- Permite explorar datos de forma interactiva.
+- Facilita la comparación entre países, continentes y subregiones.
+- Integra visualizaciones gráficas, mapas y tablas.
+- Mejora la interpretación de tendencias históricas.
+- Incorpora datos del Banco Mundial para actualizar el análisis.
+- Fortalece el análisis basado en evidencia.
+- Puede ser consultado desde un navegador web mediante shinyapps.io.
 
 ---
 
 # ⚠️ Limitaciones
 
-* La base de datos solo incluye información hasta 2007.
-* Algunos países presentan menor disponibilidad histórica.
-* El índice de desarrollo relativo es un indicador experimental.
-* No incorpora variables políticas o ambientales.
+- Gapminder tiene información histórica limitada hasta 2007.
+- No todos los países cuentan con información completa para todos los años.
+- Algunos indicadores del Banco Mundial pueden presentar valores faltantes.
+- El Índice de Desarrollo Relativo es un indicador construido con fines académicos y exploratorios.
+- El dashboard no reemplaza un análisis econométrico o causal.
 
 ---
 
-# 🚀 Mejoras Futuras
+# 🚀 Mejoras futuras
 
-* Incorporar mapas avanzados.
-* Añadir modelos predictivos.
-* Integrar machine learning.
-* Incorporar más indicadores sociales.
-* Generar reportes automáticos.
-* Mejorar el diseño visual con dashboards ejecutivos.
+- Incorporar nuevos indicadores del Banco Mundial.
+- Añadir modelos predictivos.
+- Incorporar análisis de machine learning.
+- Generar reportes automáticos.
+- Mejorar el diseño ejecutivo del dashboard.
+- Incluir análisis prospectivo.
+- Incorporar alertas o semáforos de desempeño.
+- Ampliar el análisis por subregiones.
+
+---
+
+# 📂 Estructura del proyecto
+
+```bash
+Grupo-2-ME/
+│
+├── app.R
+├── global.R
+├── server.R
+├── ui.R
+├── data/
+├── www/
+├── rsconnect/
+├── README.md
+└── .gitignore
+```
+
+---
+
+# ▶️ Instalación y ejecución local
+
+## 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/epaucarc/Grupo-2-ME.git
+```
+
+---
+
+## 2. Abrir el proyecto en RStudio
+
+Abrir la carpeta del proyecto desde RStudio.
+
+---
+
+## 3. Instalar paquetes requeridos
+
+```r
+install.packages(c(
+  "shiny",
+  "shinydashboard",
+  "ggplot2",
+  "plotly",
+  "dplyr",
+  "DT",
+  "leaflet",
+  "countrycode",
+  "WDI"
+))
+```
+
+---
+
+## 4. Ejecutar la aplicación
+
+```r
+shiny::runApp()
+```
+
+---
+
+# ☁️ Publicación en shinyapps.io
+
+Para publicar o actualizar la aplicación:
+
+```r
+rsconnect::deployApp()
+```
 
 ---
 
 # 📌 Conclusiones
 
-* Shiny permite desarrollar dashboards interactivos orientados al análisis de datos.
-* Gapminder facilita el estudio comparativo del desarrollo mundial.
-* Existen diferencias significativas entre continentes y países.
-* Las visualizaciones interactivas favorecen la interpretación de información.
-* El dashboard fortalece el análisis basado en evidencia para la toma de decisiones.
+El dashboard desarrollado permite analizar el desarrollo mundial desde una perspectiva comparativa, visual e interactiva.
+
+La integración de Gapminder y Banco Mundial mejora la capacidad de análisis, ya que combina información histórica con datos actualizables. Asimismo, el uso de filtros, mapas, rankings e insights automáticos facilita la interpretación de patrones globales y brechas territoriales.
+
+Este proyecto demuestra la utilidad de R Shiny como herramienta para comunicar información estadística de manera accesible, dinámica y orientada a la toma de decisiones.
 
 ---
 
-# 📚 Referencias Bibliográficas
+# 📚 Referencias
 
-* Wickham, H. (2016). *ggplot2: Elegant Graphics for Data Analysis*. Springer.
-* Chang, W. (2021). *Shiny: Web Application Framework for R*. R package version.
-* Gapminder Foundation. (2024). *Gapminder Data*. [https://www.gapminder.org/](https://www.gapminder.org/)
-* Xie, Y. (2023). *R Markdown: The Definitive Guide*. Chapman and Hall/CRC.
+- Gapminder Foundation. Gapminder Data. https://www.gapminder.org/
+- World Bank. World Development Indicators. https://data.worldbank.org/
+- Chang, W. Shiny: Web Application Framework for R.
+- Wickham, H. ggplot2: Elegant Graphics for Data Analysis.
+- Xie, Y. R Markdown: The Definitive Guide.
 
 ---
 
-# 🙌 Gracias
+# 🙌 Producto Académico Colaborativo
 
-## Dashboard Gapminder: Desarrollo Mundial Interactivo
-
-### Producto Académico Colaborativo
-
+## Dashboard Interactivo de Desarrollo Mundial  
 ### Grupo 2 ME
