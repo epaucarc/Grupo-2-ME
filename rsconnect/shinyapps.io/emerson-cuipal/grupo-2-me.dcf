@@ -5,8 +5,6 @@ account: emerson-cuipal
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17358406
-bundleId: 11996268
+bundleId: 12001754
 url: https://emerson-cuipal.shinyapps.io/grupo-2-me/
 version: 1
-asMultiple: FALSE
-asStatic: FALSE
